@@ -1,0 +1,14 @@
+{
+	"manifest_version": 3,
+	"name": "MimikkAi Blog WebMCP Tool",
+	"version": "1.0.0",
+	"description": "Exposes one WebMCP tool on mimikkai.ru that returns the blog article list as JSON.",
+	"content_scripts": [
+		{
+			"matches": ["https://mimikkai.ru/*"],
+			"js": ["main-world.js"],
+			"run_at": "document_start",
+			"world": "MAIN"
+		}
+	]
+}

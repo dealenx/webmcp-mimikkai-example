@@ -1,0 +1,13 @@
+{
+	"name": "webmcp-mimikkai-example",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"build": "esbuild src/main-world.ts --bundle --format=iife --minify --outfile=dist/main-world.js && cp manifest.json dist/manifest.json"
+	},
+	"dependencies": {
+		"@mcp-b/global": "^6.2.0",
+		"esbuild": "^0.28.2"
+	}
+}
